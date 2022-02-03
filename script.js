@@ -9,7 +9,7 @@ let apiQuotes = [];
 // new quote
 function newQuote() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)]
-    // Check Author
+    // Check Author if unknown
     if (!quote.author){
         authorText.textContent = 'Unknown';
     }else{
